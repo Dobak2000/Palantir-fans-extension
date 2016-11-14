@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Palantir fans' extension",
+  "description": "This extension makes the webpage a Palantir advertisement.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "web_accessible_resources": [
+    "image.png",
+    "palantir.jpg",
+    "miki.jpg",
+    "palantir2.js"
+  ],
+
+  "icons": { "16": "icon.png",
+             "48": "icon.png",
+             "128": "icon.png" }
+}
